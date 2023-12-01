@@ -49,7 +49,7 @@ class AnnotationDriver implements DriverInterface
         $this->namingStrategy = $namingStrategy;
     }
 
-    public function loadMetadataForClass(\ReflectionClass $class)
+    public function loadMetadataForClass(\ReflectionClass $class): ?Metadata\ClassMetadata
     {
         $metadata = new ClassMetadata($className = $class->getName());
         if (false !== $filename = $class->getFilename()) {
