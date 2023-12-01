@@ -34,6 +34,7 @@ use JMS\DiExtraBundle\Annotation\Tag;
 use JMS\DiExtraBundle\Annotation\Validator;
 use JMS\DiExtraBundle\Metadata\ClassMetadata;
 use JMS\DiExtraBundle\Metadata\NamingStrategy;
+use Metadata\ClassMetadata;
 use Metadata\Driver\DriverInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\Reference;
@@ -49,7 +50,7 @@ class AnnotationDriver implements DriverInterface
         $this->namingStrategy = $namingStrategy;
     }
 
-    public function loadMetadataForClass(\ReflectionClass $class): ?Metadata\ClassMetadata
+    public function loadMetadataForClass(\ReflectionClass $class): ?ClassMetadata
     {
         $metadata = new ClassMetadata($className = $class->getName());
         if (false !== $filename = $class->getFilename()) {
