@@ -49,5 +49,6 @@
     },
     "autoload": {
         "psr-4": { "JMS\\DiExtraBundle\\": "" }
-    }
+    },
+    "minimum-stability": "dev"
 }
