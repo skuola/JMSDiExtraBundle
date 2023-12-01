@@ -5,6 +5,12 @@
     "keywords": ["annotations","dependency injection"],
     "homepage": "http://jmsyst.com/bundles/JMSDiExtraBundle",
     "license": "Apache-2.0",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/skuola/jms-metadata.git"
+        }
+    ],
     "authors": [
         {
             "name": "Johannes M. Schmitt",
@@ -20,7 +26,7 @@
         "symfony/process": "~2.3|~3.0|~4.4",
         "symfony/finder": "~2.3|~3.0|~4.4",
         "jms/aop-bundle": "~1.1",
-        "jms/metadata": "~2.0"
+        "skuola/jms-metadata": "dev-main"
     },
     "require-dev": {
         "symfony/validator": "~2.3|~3.0|~4.4",
