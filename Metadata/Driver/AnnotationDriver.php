@@ -34,8 +34,6 @@ use JMS\DiExtraBundle\Annotation\Tag;
 use JMS\DiExtraBundle\Annotation\Validator;
 use JMS\DiExtraBundle\Metadata\ClassMetadata;
 use JMS\DiExtraBundle\Metadata\NamingStrategy;
-use Metadata\ClassMetadata;
-use Metadata\Driver\DriverInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\Reference;
 
