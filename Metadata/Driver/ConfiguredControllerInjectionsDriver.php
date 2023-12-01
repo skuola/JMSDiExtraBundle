@@ -19,7 +19,7 @@
 namespace JMS\DiExtraBundle\Metadata\Driver;
 
 use JMS\DiExtraBundle\Metadata\ClassMetadata;
-use Metadata\Driver\DriverInterface;
+use Metadata\ClassMetadata\DriverInterface;
 
 class ConfiguredControllerInjectionsDriver implements DriverInterface
 {
