@@ -34,7 +34,7 @@ class ConfiguredControllerInjectionsDriver implements DriverInterface
         $this->methodInjections = $methodInjections;
     }
 
-    public function loadMetadataForClass(\ReflectionClass $class)
+    public function loadMetadataForClass(\ReflectionClass $class): ?ClassMetadata
     {
         $metadata = $this->delegate->loadMetadataForClass($class);
 
