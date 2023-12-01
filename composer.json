@@ -43,10 +43,5 @@
     },
     "autoload": {
         "psr-4": { "JMS\\DiExtraBundle\\": "" }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "dev-main"
-        }
     }
 }
