@@ -1,5 +1,5 @@
 {
-    "name": "skuola/jms-di-extra-bundle",
+    "name": "jms/di-extra-bundle",
     "type": "symfony-bundle",
     "description": "Allows to configure dependency injection using annotations",
     "keywords": ["annotations","dependency injection"],
